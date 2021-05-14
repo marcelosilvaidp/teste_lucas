@@ -1,0 +1,151 @@
+// Scss variables files
+@import "./variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  color: #5a5c69;
+  font-family: "Roboto", sans-serif;
+  background-color: $background;
+  margin: 0;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: ease-in-out 0.4s;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:active {
+      background-color: $light-blue;
+    }
+  }
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+
+  fieldset {
+    border: 0;
+    background-color: $fieldset-background;
+    width: 300px;
+    -webkit-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+    box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+    padding-left: 50px;
+  }
+
+  .button-send {
+    background-color: $button-send;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 85%;
+    }
+  }
+
+  .form-title {
+    text-align: left;
+    font-size: 20px;
+    color: $title;
+    text-transform: uppercase;
+  }
+
+  .grupo {
+    padding-bottom: 20px;
+    float: left;
+    text-align: left;
+    label {
+      // margin-bottom: 0.2em;
+      color: $label-color;
+      margin-bottom: 2em;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      padding: 0.2em;
+      width: 250px;
+      display: block;
+      margin-bottom: 2em;
+      border: none;
+      height: 20px;
+      -webkit-box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+      -moz-box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+      box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    select option {
+      padding-right: 1em;
+      margin-bottom: 2em;
+      border: 0px;
+      outline: 0px;
+    }
+
+    select {
+      width: 260px;
+      display: block;
+      padding: 0.2em;
+      margin-bottom: 2em;
+      border: 0px;
+      outline: 0px;
+      height: 30px;
+    }
+
+    textarea {
+      width: 254px;
+      height: 100px;
+      display: block;
+      padding: 0.2em;
+      border: none;
+      -webkit-box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+      -moz-box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+      box-shadow: 2px 2px 2px -2px rgba(184, 184, 184, 1);
+    }
+  }
+
+  span {
+    color: red;
+  }
+}
