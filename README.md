@@ -26,3 +26,6 @@ Link de acesso: https://lucaspmarra.github.io/teste_lucas/
 ### Update v6:
 - Link para projeto no ar;
 - Manutenção caminho do diretório css/js;
+
+### Update v7:
+- Manutenção no link das imagens randomicas;
