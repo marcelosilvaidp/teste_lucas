@@ -1,5 +1,4 @@
 # Teste de seleção de Desenvolvedores Front-End na IDP!
-Link de acesso: https://lucaspmarra.github.io/teste_lucas/
 
 ## Controle de versão:
 
@@ -22,3 +21,7 @@ Link de acesso: https://lucaspmarra.github.io/teste_lucas/
 - Sistema funcional;
 - Carousel inserido;
 - Ação de botão inserido;
+
+### Update v6:
+- Link para projeto no ar;
+- Manutenção caminho do diretório css/js;
