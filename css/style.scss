@@ -11,6 +11,9 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+* {
+  box-sizing: border-box;
+}
 
 nav {
   background-color: #333;
@@ -40,13 +43,43 @@ nav {
 .carousel {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+
 }
 
 .info {
   display: flex;
   justify-content: center;
+  background-color: #faf9f8;
+
+  .info-left {
+    float: left;
+    padding: 50px 0 0 50px;
+  }
+
+  .info-right {
+    float: right;
+    padding: 50px 50px 0 0;
+  }
+  .info-button {
+    background-color: indianred;
+    color: white;
+    border: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    height: 50px;
+    width: 200px;
+    padding: 0 20px 0 20px;
+    transition: ease-in-out 0.3s;
+    margin: 20px 0 50px 0;
+    -webkit-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+    box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
+
+    &:hover {
+      opacity: 85%;
+    }
+  }
 }
 
 form {
@@ -58,7 +91,7 @@ form {
   fieldset {
     border: 0;
     background-color: $fieldset-background;
-    width: 300px;
+    width: 350px;
     -webkit-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
     -moz-box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
     box-shadow: 10px 9px 4px -5px rgba(184, 184, 184, 1);
@@ -147,5 +180,88 @@ form {
 
   span {
     color: red;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+.slideCarousel {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $image-buttons;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    color: $image-buttons-hover;
+  }
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: $caption-text;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: $numbertext;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }

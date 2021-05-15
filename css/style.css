@@ -8,6 +8,11 @@ body {
   min-height: 100vh;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 nav {
   background-color: #333;
   overflow: hidden;
@@ -45,8 +50,6 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
 }
 
 .info {
@@ -56,6 +59,38 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #faf9f8;
+}
+
+.info .info-left {
+  float: left;
+  padding: 50px 0 0 50px;
+}
+
+.info .info-right {
+  float: right;
+  padding: 50px 50px 0 0;
+}
+
+.info .info-button {
+  background-color: indianred;
+  color: white;
+  border: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  height: 50px;
+  width: 200px;
+  padding: 0 20px 0 20px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  margin: 20px 0 50px 0;
+  -webkit-box-shadow: 10px 9px 4px -5px #b8b8b8;
+  box-shadow: 10px 9px 4px -5px #b8b8b8;
+}
+
+.info .info-button:hover {
+  opacity: 85%;
 }
 
 form {
@@ -75,7 +110,7 @@ form {
 form fieldset {
   border: 0;
   background-color: #e8e8e8;
-  width: 300px;
+  width: 350px;
   -webkit-box-shadow: 10px 9px 4px -5px #b8b8b8;
   box-shadow: 10px 9px 4px -5px #b8b8b8;
   padding-left: 50px;
@@ -165,5 +200,94 @@ form .grupo textarea {
 
 form span {
   color: red;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+.slideCarousel {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

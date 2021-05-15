@@ -16,3 +16,8 @@
 ### Update v4:
 - Formuluário inserido;
 - Carousel e outras informações em construção;
+
+### Update v5:
+- Sistema funcional;
+- Carousel inserido;
+- Ação de botão inserido;
